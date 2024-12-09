@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { test } from "vitest";
 
 function NavBar() {
   return (
@@ -7,7 +8,9 @@ function NavBar() {
       <NavLink to="/directors">Directors</NavLink>
       <NavLink to="/actors">Actors</NavLink>
     </nav>
-    );
+  );
 }
 
 export default NavBar;
+//npm test
+

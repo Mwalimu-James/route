@@ -1,16 +1,16 @@
 
 
-function Card({name, movies}) {
-  const movieList = movies.map(movie => <li key={movie}>{movie}</li>)
-  
+function Card({ name, movies }) {
   return (
     <article>
-        <h2>{name}</h2>
-        <ul>
-            {movieList}
-        </ul>
+      <h2>{name}</h2>
+      <ul>
+        {movies.map((movie, index) => (
+          <li key={index}>{movie}</li>
+        ))}
+      </ul>
     </article>
-  )
+  );
 }
 
-export default Card
+export default Card;
